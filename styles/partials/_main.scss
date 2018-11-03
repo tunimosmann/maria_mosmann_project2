@@ -1,0 +1,9 @@
+.main {
+    &__heading {
+        @include heading(42);
+    }
+    &__text {
+        width: 90%;
+        margin: 30px 0;
+    }
+}

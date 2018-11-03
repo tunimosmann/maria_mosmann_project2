@@ -1,0 +1,18 @@
+.button {
+    background: $colorAccent;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    line-height: 32px;
+    letter-spacing: 1px;
+    width: 220px;
+    padding: 10px;
+    transition: color 300ms, background 300ms;
+    &--narrow {
+        width: 170px;
+    }
+    &:hover {
+        background: $colorSecondary;        
+        color: #fff;
+    }   
+}
