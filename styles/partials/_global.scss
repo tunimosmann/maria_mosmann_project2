@@ -3,8 +3,7 @@ html {
 }
 
 body {
-    font-size: ($fontSize / 10) * 1rem;
-    font-size: $fontSize * 1px; 
+    font-size: ($fontSize / 10) * 1rem;    
     font-family: $fontFamily;
     color: $text;  
     font-weight: 400;
@@ -12,12 +11,14 @@ body {
 
 p {
     line-height: 32px;
+    margin: 0;
+    padding: 0;
 }
 
 a {
     color: $text;    
     text-decoration: none;   
-    // padding: 5px;
+    padding: 0 10px;
     display: block;       
 }
 

@@ -2,7 +2,7 @@ $text: #2c2c2c;
 $textSecondary: #285e64;
 $background: #f0efed;
 $backgroundSecondary: #4f4f4f;
-$colorPrimary: #f6a823;
+$color: #f6a823;
 $colorSecondary: #a82706;
 $colorAccent: #05afc1;
 
@@ -11,11 +11,10 @@ $fontFamily: 'Roboto', sans-serif;
 $fontFamilySecondary: 'Lora', serif;
 
 @mixin heading($fontSizeHeading) { 
-    font-size: ($fontSizeHeading / 10) * 1rem;
-    font-size: $fontSizeHeading * 1px;
+    font-size: ($fontSizeHeading / 10) * 1rem;    
     font-weight: 700;
     letter-spacing: 1px;
-    text-transform: capitalize;
+    text-transform: uppercase;
     margin: 0;
     padding: 0;
 }
@@ -24,7 +23,7 @@ $fontFamilySecondary: 'Lora', serif;
     font-weight: 700;
     letter-spacing: 1px;
     text-align: center;
-    text-transform: capitalize;
+    text-transform: uppercase;
     line-height: 32px;
     width: $width;
     background: $colorAccent;

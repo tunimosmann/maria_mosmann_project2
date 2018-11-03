@@ -1,0 +1,38 @@
+.nav {
+    background: $color;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    &__main-menu {
+        width: 80%;
+        // max-width: 600px;
+        padding: 20px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__links {
+        font-weight: 700;
+        text-align: center;
+        line-height: 29px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding: 0 15px;
+        margin: 0 5px;
+        transition: transform 300ms, text-shadow 300ms, color 300ms;
+        &--color {
+            color: #fff;
+        } 
+        &:hover {
+            transform: scale(1.5);
+            text-shadow: -4px -4px 0 $colorSecondary, 4px 4px 0 $colorAccent;
+            color: #fff;
+        }       
+    }
+    &__title {
+        @include heading(42);
+        font-family: 'Lora', serif;
+        padding: 0 40px;
+    }         
+}

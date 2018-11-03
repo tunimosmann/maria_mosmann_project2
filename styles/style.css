@@ -145,15 +145,17 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
-.skip-link {
+.skipLink {
   position: absolute;
   left: -1000px;
   top: 5px;
   z-index: 999;
-  background: white;
-  color: black; }
+  background: #f0efed;
+  color: #2c2c2c;
+  padding: 10px;
+  border: 2px solid #2c2c2c; }
 
-.skip-link:focus {
+.skipLink:focus {
   left: 0; }
 
 html {
@@ -161,17 +163,19 @@ html {
 
 body {
   font-size: 2rem;
-  font-size: 20px;
   font-family: "Roboto", sans-serif;
   color: #2c2c2c;
   font-weight: 400; }
 
 p {
-  line-height: 32px; }
+  line-height: 32px;
+  margin: 0;
+  padding: 0; }
 
 a {
   color: #2c2c2c;
   text-decoration: none;
+  padding: 0 10px;
   display: block; }
 
 ul {
@@ -191,3 +195,52 @@ img {
 
 .wrapper {
   width: 80%; }
+
+.nav {
+  background: #f6a823;
+  width: 100%;
+  position: fixed;
+  top: 0; }
+  .nav__main-menu {
+    width: 80%;
+    padding: 20px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .nav__links {
+    font-weight: 700;
+    text-align: center;
+    line-height: 29px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 0 15px;
+    margin: 0 5px;
+    -webkit-transition: text-shadow 300ms, color 300ms, -webkit-transform 300ms;
+    transition: text-shadow 300ms, color 300ms, -webkit-transform 300ms;
+    -o-transition: transform 300ms, text-shadow 300ms, color 300ms;
+    transition: transform 300ms, text-shadow 300ms, color 300ms;
+    transition: transform 300ms, text-shadow 300ms, color 300ms, -webkit-transform 300ms; }
+    .nav__links--color {
+      color: #fff; }
+    .nav__links:hover {
+      -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+      transform: scale(1.5);
+      text-shadow: -4px -4px 0 #a82706, 4px 4px 0 #05afc1;
+      color: #fff; }
+  .nav__title {
+    font-size: 4.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+    padding: 0 40px; }
