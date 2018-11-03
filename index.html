@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Sophie</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="keywords" content="">
@@ -17,24 +17,24 @@
     <meta name="twitter:url" content="">
     <meta name="twitter:title" content="">
     <meta name="twitter:description" content="">
-    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
     <link type="image/png" href="" rel="icon">
     <link rel="apple-touch-icon" href="">
-    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:700|Roboto:400,700" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 
-<!-- SKIP CONTENT STARTS -->
+<!-- SKIP CONTENT START -->
 <a href="#mainContent" class="skipLink">Skip to main content</a>
-<!-- SKIP CONTENT ENDS -->
+<!-- SKIP CONTENT END -->
 
 <!-- STICKY NAV MENU START -->
-
 <nav class="nav">
     <ul class="nav__main-menu">
         <li class="nav__items">
-            <a href="#home" class="nav__links">Home</a>
+            <a href="#home" class="nav__links nav__links--color">Home</a>
         </li>
 
         <li class="nav__items">
@@ -50,10 +50,9 @@
         </li>
     </ul>
 </nav>
-
 <!-- STICKY NAV MENU END -->
 
-<!-- HEADER STARTS -->
+<!-- HEADER START -->
 <header class="header">
     <div class="header__circle-text">
         <img class="header__text-image" src="assets/circle-text.png" alt="surrounding the word 'Sophie' there's a text saying 'it's all about'', forming the phrase 'it's all about Sophie'">
@@ -65,21 +64,25 @@
         <img class="header__image" src="assets/home-image-1.jpg" alt="Sophie covering her eyes with orange halves" >
     </div>    
 </header>
-<!-- HEADER ENDS -->
+<!-- HEADER END -->
 
-<!-- MAIN STARTS -->
+<!-- MAIN START -->
 <main id="mainContent">
+    <!-- ABOUT START -->
     <section class="about">
+            <!-- ABOUT MAIN CONTENT START -->
             <div class="about__main">
                 <div class="main wrapper">
                     <h2 class="main__heading">Who is Sophie</h2>
 
                     <p class="main__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad architecto ipsa adipisci quasi eos ea exercitationem velit sequi! Cupiditate repellendus suscipit ad id quaerat porro reiciendis ab iste earum? Harum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus porro tempora perspiciatis commodi id, quo atque voluptatem tempore aut. Commodi odio placeat dolor laudantium sint natus, aperiam quasi mollitia modi!</p>
 
-                    <a href="#" class="button">Find out more</a>
+                    <a href="#" class="button">Find out more <span class="sr-only">about Sophie</span></a>
                 </div>
             </div>
+            <!-- ABOUT MAIN CONTENT END -->
 
+            <!-- ABOUT SUB CONTENT START -->
             <div class="about__sub">
                 <div class="sub wrapper">
                     <div class="sub__image-container">
@@ -91,10 +94,10 @@
 
                         <p class="sub__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eligendi corporis tempora perspiciatis, praesentium sit veritatis illo. Sunt, voluptatibus debitis voluptas vel animi consequuntur natus aspernatur neque rerum officia placeat!</p>
 
-                        <a href="#" class="button button--narrow">Read more</a>
+                        <a href="#" class="button button--narrow">Read more <span class="sr-only">about Sophie's favourite things</span></a>
                     </div>
                 </div>
-            </div>
+            </div>            
 
             <div class="about__sub">
                 <div class="sub--flex-reverse wrapper">
@@ -109,18 +112,22 @@
                             perspiciatis, praesentium sit veritatis illo. Sunt, voluptatibus debitis voluptas vel animi
                             consequuntur natus aspernatur neque rerum officia placeat!</p>
             
-                        <a href="#" class="button button--narrow">Read more</a>
+                        <a href="#" class="button button--narrow">Read more <span class="sr-only">about where Sophie travelled</span></a>
                     </div>
                 </div>
             </div>
-        </div>
+            <!-- ABOUT SUB CONTENT END -->
+        </div>        
     </section>
+    <!-- ABOUT END -->
 
+    <!-- LINKS START -->
     <section class="links">
+        <!-- LINKS ITEMS START -->
         <div class="links__container wrapper">
             <a href="#gallery" class="links__items">
                 <div class="links__icon-container">
-                    <!-- ICON -->
+                    <i class="fas fa-image" aria-hidden="true"></i>
                 </div>
                 
                 <div class="links__content">
@@ -132,7 +139,7 @@
 
             <a href="#about" class="links__items">
                 <div class="links__icon-container">
-                    <!-- ICON -->
+                    <i class="fas fa-user" aria-hidden="true"></i>
                 </div>
                 
                 <div class="links__content">
@@ -144,7 +151,7 @@
 
             <a href="blog.html" class="links__items">
                 <div class="links__icon-container">
-                    <!-- ICON -->
+                    <i class="fas fa-desktop" aria-hidden="true"></i>
                 </div>
                 
                 <div class="links__content">
@@ -156,7 +163,7 @@
 
             <a href="contact.html" class="links__items">
                 <div class="links__icon-container">
-                    <!-- ICON -->
+                    <i class="fas fa-phone" aria-hidden="true"></i>
                 </div>
                 
                 <div class="links__content">
@@ -166,14 +173,20 @@
                 </div>    
             </a>
         </div>
+        <!-- LINKS ITEMS END -->
 
+        <!-- LINKS IMAGE START -->
         <div class="links__image-container">
             <img class="links__image" src="assets/home-image-4.jpg" alt="side view of two rows of stadium seats">
         </div>
+        <!-- LINKS IMAGE END -->
     </section>
+    <!-- LINKS END -->
 
+    <!-- JOURNEY START -->
     <section class="journey">
         <div class="journey__container wrapper">
+            <!-- JOURNEY MAIN CONTENT START -->
             <div class="journey__main">
                 <div class="journey__image-container">
                     <img class="journey__image" src="assets/home-image-5.jpg" alt="Sophie wearing sunglasses with her hair up, on top of a building">
@@ -184,10 +197,12 @@
 
                     <p class="main__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, ipsum perspiciatis. Ullam dicta esse, sunt cum itaque laborum delectus. Minima voluptatum voluptatem sed animi quia aliquid cum, numquam sequi magnam, nisi hic aut delectus veniam vitae corrupti qui ullam. In rerum earum quas pariatur dignissimos.</p>
 
-                    <a href="#" class="button button--narrow">Find out more</a>
+                    <a href="#" class="button button--narrow">Find out more <span class="sr-only">about Sophie's journey</span></a>
                 </div>
             </div>
+            <!-- JOURNEY MAIN CONTENT END -->
 
+            <!-- GALLERY START -->
             <ul class="journey__gallery">
                 <li class="journey__gallery-items">
                     <img class="journey__gallery-images" src="assets/home-image-6.jpg" alt="The front of a bicycle agains a walls">
@@ -201,16 +216,18 @@
                     <img class="journey__gallery-images" src="assets/home-image-8.jpg" alt="edge of a beach umbrella against a clear sky">
                 </li>
             </ul>
+            <!-- GALLERY END -->
         </div>
     </section>
+    <!-- JOURNEY END -->
 </main>
-<!-- MAIN ENDS -->
+<!-- MAIN END -->
 
-<!-- FOOTER STARTS -->
+<!-- FOOTER START -->
 <footer class="copyright">
     <p class="copyright__text">Copyright &copy; 2018 HackerYou</p>   
 </footer>
-<!-- FOOTER ENDS -->
+<!-- FOOTER END -->
 
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Sophie - Get in touch</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="keywords" content="">
@@ -17,20 +17,20 @@
     <meta name="twitter:url" content="">
     <meta name="twitter:title" content="">
     <meta name="twitter:description" content="">
-    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
     <link type="image/png" href="" rel="icon">
     <link rel="apple-touch-icon" href="">
-    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:700|Roboto:400,700" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 
-<!-- SKIP CONTENT STARTS -->
+<!-- SKIP CONTENT START -->
 <a href="#mainContent" class="skipLink">Skip to main content</a>
-<!-- SKIP CONTENT ENDS -->
+<!-- SKIP CONTENT END -->
 
 <!-- STICKY NAV MENU START -->
-
 <nav class="nav">
     <ul class="nav__main-menu">
         <li class="nav__items">
@@ -46,30 +46,83 @@
         </li>
 
         <li class="nav__items">
-            <a href="contact.html" class="nav__links">Contact</a>
+            <a href="contact.html" class="nav__links nav__links--color">Contact</a>
         </li>
     </ul>
 </nav>
-
 <!-- STICKY NAV MENU END -->
 
 <!-- HEADER STARTS -->
-
 <header class="header">
     <h1 class="header__heading">Get in Touch</h1>
 </header>
-
 <!-- HEADER ENDS -->
 
-<!-- MAIN STARTS -->
-<main id="mainContent">
+<!-- ASIDE STARTS -->
+<aside class="aside">
+    <!-- SOCIAL MEDIA START -->
+    <div class="aside__social-media">
+        <a href="" class="aside__links">
+            <span class="sr-only">Facebook</span>
+            <i class="fab fa-facebook-f aside__icons"></i>
+        </a>
 
+        <a href="" class="aside__links">
+            <span class="sr-only">Twitter</span>
+            <i class="fab fa-twitter aside__icons"></i>
+        </a>
+
+        <a href="" class="aside__links">
+            <span class="sr-only">LinkedIn</span>
+            <i class="fab fa-linkedin-in aside__icons"></i>
+        </a>
+        
+        <a href="" class="aside__links">
+            <span class="sr-only">Instagram</span>
+            <i class="fab fa-instagram aside__icons"></i>
+        </a>
+    </div>
+    <!-- SOCIAL MEDIA END -->
+
+    <!-- CONTACT INFO START -->
+    <a href="mailto:info@email.com" class="aside__email">info@email.com</a>
+
+    <a href="tel:123-456-7890" class="aside__phone">123-456-7890</a>
+
+    <p class="aside__address">123 Queen Street West, Unit 10</p>
+    <p class="aside__address">Toronto, Ontario</p>
+    <p class="aside__address">M5V 2D5</p>
+    <!-- CONTACT INFO END -->
+</aside>
+<!-- ASIDE ENDS -->
+
+<!-- MAIN STARTS -->
+<main id="mainContent" class="background">
+    <div class="wrapper">
+        <!-- CONTACT FORM START -->
+        <form action="http://www.focuspocus.io/magic/rossimosmann@gmail.com" method="POST" name="contact-form" autocomplete="off"
+        autocorrect="off" autocapitalize="off" class="form">
+
+            <label for="name" class="visuallyhidden">Name</label>
+            <input type="text" class="form__name" id="name" name="Name" placeholder="Name" required>
+        
+            <label for="email" class="visuallyhidden">Email address</label>
+            <input type="email" class="form__email" id="email" name="Email" placeholder="Email address" required>
+        
+            <label for="message" class="visuallyhidden">Message</label>
+            <input type="text" class="form__text" id="message" name="Message" placeholder="Message" required>
+        
+            <button class="button--wide">Submit <span class="sr-only">your message</span></button>
+
+        </form>
+        <!-- CONTACT FORM END -->
+    </div>
 </main>
 <!-- MAIN ENDS -->
 
 <!-- FOOTER STARTS -->
-<footer>
-
+<footer class="copyright">
+    <p class="copyright__text">Copyright &copy; 2018 HackerYou</p>
 </footer>
 <!-- FOOTER ENDS -->
 

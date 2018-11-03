@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Sophie - Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="keywords" content="">
@@ -17,20 +17,20 @@
     <meta name="twitter:url" content="">
     <meta name="twitter:title" content="">
     <meta name="twitter:description" content="">
-    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
     <link type="image/png" href="" rel="icon">
     <link rel="apple-touch-icon" href="">
-    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:700|Roboto:400,700" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 
-<!-- SKIP CONTENT STARTS -->
+<!-- SKIP CONTENT START -->
 <a href="#mainContent" class="skipLink">Skip to main content</a>
-<!-- SKIP CONTENT ENDS -->
+<!-- SKIP CONTENT END -->
 
 <!-- STICKY NAV MENU START -->
-
 <nav class="nav">
     <ul class="nav__main-menu">
         <li class="nav__items">
@@ -42,7 +42,7 @@
         </li>
 
         <li class="nav__items">
-            <a href="blog.html" class="nav__links">Blog</a>
+            <a href="blog.html" class="nav__links nav__links--color">Blog</a>
         </li>
 
         <li class="nav__items">
@@ -50,7 +50,6 @@
         </li>
     </ul>
 </nav>
-
 <!-- STICKY NAV MENU END -->
 
 <!-- HEADER STARTS -->
@@ -60,9 +59,11 @@
 <!-- HEADER ENDS -->
 
 <!-- MAIN STARTS -->
-<main id="mainContent">
-    <div class="wrapper">  
+<main id="mainContent" class="background">
+    <div class="wrapper">         
+        <!-- BLOG ASIDE START -->
         <aside class="aside">
+            <!-- ABOUT START -->
             <div class="aside__container">
                 <div class="aside__image-container">
                     <img src="assets/blog-image-2.jpg" alt="Sophie covering her eyes with orange halves" class="aside__image">
@@ -72,7 +73,9 @@
 
                 <p class="aside__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, neque? Accusamus, consequatur! <a href="index.html/#about" class="aside__link aside__link--blue">Find out more.</a></p>
             </div>
+            <!-- ABOUT END -->
 
+            <!-- RECENT POSTS START -->
             <div class="aside__container">
                 <h3 class="aside__heading">Recent Posts</h3>
 
@@ -94,9 +97,13 @@
                     </li>
                 </ul>
             </div>
+            <!-- RECENT POSTS END -->
         </aside>
+        <!-- BLOG ASIDE END -->
 
+        <!-- BLOG START -->
         <article class="blog">
+            <!-- BLOG POST START -->
             <div class="blog__post">
                 <h2 class="blog__heading">Why I became a blogger</h2>
 
@@ -114,7 +121,9 @@
 
                 <p class="blog__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium mollitia illo accusamus earum, rerum quia! Corrupti nesciunt sapiente exercitationem cum error quo accusantium sed animi corporis ipsam, ipsa voluptatum placeat possimus itaque soluta quod, ducimus quasi natus eos quibusdam commodi deleniti hic qui. Rem aliquid libero delectus sequi laboriosam eum pariatur rerum repellendus exercitationem. Velit libero est rerum ea aliquam, ducimus esse! At velit repudiandae, cum illum vitae, a dolorem, doloribus laborum similique commodi tempore incidunt praesentium! Ab cum, quis officia praesentium voluptatibus, nulla excepturi corporis pariatur molestiae, autem laudantium et quae ducimus odit. Labore ratione autem reiciendis qui minima.</p>
             </div>
+            <!-- BLOG POST END -->
 
+            <!-- COMMENTS START -->
             <div class="blog__comments">
                 <div class="blog__image-container">
                     <img src="assets/blog-image-3.jpg"" alt="Jeremy's headshot" class="blog__image">
@@ -136,21 +145,26 @@
                     <p class="blog__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae assumenda accusamus eaque maiores atque quos, rerum quia iusto sunt repellendus in odio recusandae quibusdam iste facere culpa officiis. Iusto, distinctio quod quia nulla natus iure.</p>
                 </div>
             </div>
-
-            <form action="" class="form">
-                <label for="" class="form__label"></label>
-                <input type="text" class="form__name">
-
-                <label for="" class="form__label"></label>
-                <input type="text" class="form__email">
-
-                <label for="" class="form__label"></label>
-                <input type="text" class="form__comment">
-
-                <label for="" class="form__label"></label>
-                <button class="button--wide"></button>
+            <!-- COMMENTS END -->
+            
+            <!-- COMMENT FORM START -->
+            <form action="http://www.focuspocus.io/magic/rossimosmann@gmail.com" method="POST" name="contact-form" autocomplete="off" autocorrect="off" autocapitalize="off" class="form">
+            
+                <label for="name" class="visuallyhidden">Name</label>
+                <input type="text" class="form__name" id="name" name="Name" placeholder="Name" required>
+            
+                <label for="email" class="visuallyhidden">Email address</label>
+                <input type="email" class="form__email" id="email" name="Email" placeholder="Email address" required>
+            
+                <label for="comment" class="visuallyhidden">Comment</label>
+                <input type="text" class="form__text" id="comment" name="Comment" placeholder="Comment" required>
+            
+                <button class="button--wide">Post comment</button>
+            
             </form>
+            <!-- COMMENT FORM END -->  
         </article>
+        <!-- BLOG END -->
     </div>
 </main>
 <!-- MAIN ENDS -->
@@ -163,6 +177,3 @@
 
 </body>
 </html>
-
-
-<div class="menu"></div>
