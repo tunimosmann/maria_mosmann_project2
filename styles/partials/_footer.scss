@@ -1,0 +1,8 @@
+.copyright {
+    background: $text;
+    padding: 5px;
+    &__text {
+        color: $background;
+        text-align: center;
+    }
+}

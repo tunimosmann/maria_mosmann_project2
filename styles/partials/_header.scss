@@ -1,0 +1,48 @@
+.header {
+    background: $color;    
+    height: 90vh;    
+    &--small {
+        height: 50vh;
+        background: none;    
+    }                  
+    &__wrapper {         
+        display: flex;
+        justify-content: space-around;
+        align-items: center;        
+        height: 100%;
+        margin-top: 70px; 
+        &--small {
+        width: 100%;        
+        background: url(../assets/blog-image-1.jpg);        
+        background-size: cover;
+        background-repeat: no-repeat;               
+        position: relative;       
+        } 
+        &--background {
+            background: url(../assets/contact-image-1.jpg); 
+        }                                   
+    }
+    &__title {
+        position: relative;        
+    }
+    &__heading {
+        @include heading(150);
+        font-family: 'Lora', serif;
+        &--small {
+        @include heading(80);
+        position: absolute;
+        left: 10%;
+        bottom: -15%;        
+        }        
+    }
+    &__text-image {
+        position: absolute;
+        top: -20%;
+        left: -10%;
+    }
+    &__image {
+        box-shadow: 20px 20px 0 0 #fff;
+        position: relative;
+        top: 50px;
+    }
+}
