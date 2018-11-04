@@ -1,0 +1,11 @@
+.aside {    
+    &__container {
+    background: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    }
+    &__heading {
+        @include heading(24);
+        padding: 30px 0 20px 0; 
+    }
+}

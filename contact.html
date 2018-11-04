@@ -64,64 +64,66 @@
 </header>
 <!-- HEADER ENDS -->
 
-<!-- ASIDE STARTS -->
-<aside class="aside">
-    <!-- SOCIAL MEDIA START -->
-    <div class="aside__social-media">
-        <a href="" class="aside__links">
-            <span class="sr-only">Facebook</span>
-            <i class="fab fa-facebook-f aside__icons"></i>
-        </a>
-
-        <a href="" class="aside__links">
-            <span class="sr-only">Twitter</span>
-            <i class="fab fa-twitter aside__icons"></i>
-        </a>
-
-        <a href="" class="aside__links">
-            <span class="sr-only">LinkedIn</span>
-            <i class="fab fa-linkedin-in aside__icons"></i>
-        </a>
-        
-        <a href="" class="aside__links">
-            <span class="sr-only">Instagram</span>
-            <i class="fab fa-instagram aside__icons"></i>
-        </a>
-    </div>
-    <!-- SOCIAL MEDIA END -->
-
-    <!-- CONTACT INFO START -->
-    <a href="mailto:info@email.com" class="aside__email">info@email.com</a>
-
-    <a href="tel:123-456-7890" class="aside__phone">123-456-7890</a>
-
-    <p class="aside__address">123 Queen Street West, Unit 10</p>
-    <p class="aside__address">Toronto, Ontario</p>
-    <p class="aside__address">M5V 2D5</p>
-    <!-- CONTACT INFO END -->
-</aside>
-<!-- ASIDE ENDS -->
-
 <!-- MAIN STARTS -->
-<main id="mainContent" class="background">
-    <div class="wrapper">
+<main id="mainContent" class="page">
+    <div class="page__wrapper wrapper">
+    <!-- ASIDE STARTS -->
+        <aside class="page__container aside">
+            <!-- SOCIAL MEDIA START -->
+            <div class="aside__social-media">
+                <a href="" class="aside__links">
+                    <span class="sr-only">Facebook</span>
+                    <i class="fab fa-facebook-f aside__icons"></i>
+                </a>
+        
+                <a href="" class="aside__links">
+                    <span class="sr-only">Twitter</span>
+                    <i class="fab fa-twitter aside__icons"></i>
+                </a>
+        
+                <a href="" class="aside__links">
+                    <span class="sr-only">LinkedIn</span>
+                    <i class="fab fa-linkedin-in aside__icons"></i>
+                </a>
+        
+                <a href="" class="aside__links">
+                    <span class="sr-only">Instagram</span>
+                    <i class="fab fa-instagram aside__icons"></i>
+                </a>
+            </div>
+            <!-- SOCIAL MEDIA END -->
+        
+            <!-- CONTACT INFO START -->
+            <a href="mailto:info@email.com" class="aside__email">info@email.com</a>
+        
+            <a href="tel:123-456-7890" class="aside__phone">123-456-7890</a>
+        
+            <p class="aside__address">123 Queen Street West, Unit 10</p>
+            <p class="aside__address">Toronto, Ontario</p>
+            <p class="aside__address">M5V 2D5</p>
+            <!-- CONTACT INFO END -->
+        </aside>
+        <!-- ASIDE ENDS -->
+
         <!-- CONTACT FORM START -->
-        <form action="http://www.focuspocus.io/magic/rossimosmann@gmail.com" method="POST" name="contact-form" autocomplete="off"
-        autocorrect="off" autocapitalize="off" class="form">
+        <div class="page__container page__container--wider form">        
+            <form action="http://www.focuspocus.io/magic/rossimosmann@gmail.com" method="POST" name="contact-form" autocomplete="off"
+            autocorrect="off" autocapitalize="off" class="form__container">
 
-            <label for="name" class="visuallyhidden">Name</label>
-            <input type="text" class="form__name" id="name" name="Name" placeholder="Name" required>
-        
-            <label for="email" class="visuallyhidden">Email address</label>
-            <input type="email" class="form__email" id="email" name="Email" placeholder="Email address" required>
-        
-            <label for="message" class="visuallyhidden">Message</label>
-            <input type="text" class="form__text" id="message" name="Message" placeholder="Message" required>
-        
-            <button class="button--wide">Submit <span class="sr-only">your message</span></button>
+                <label for="name" class="visuallyhidden">Name</label>
+                <input type="text" class="form__name" id="name" name="Name" placeholder="Name" required>
+            
+                <label for="email" class="visuallyhidden">Email address</label>
+                <input type="email" class="form__email" id="email" name="Email" placeholder="Email address" required>
+            
+                <label for="message" class="visuallyhidden">Message</label>
+                <input type="text" class="form__text" id="message" name="Message" placeholder="Message" required>
+            
+                <button class="button--wide">Submit <span class="sr-only">your message</span></button>
 
-        </form>
-        <!-- CONTACT FORM END -->
+            </form>
+            <!-- CONTACT FORM END -->
+        </div>
     </div>
 </main>
 <!-- MAIN ENDS -->

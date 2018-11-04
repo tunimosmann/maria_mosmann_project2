@@ -487,6 +487,38 @@ img {
 .journey__gallery-items {
   width: 31%; }
 
+.page {
+  background: #f0efed; }
+  .page__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 100px 0; }
+  .page__container {
+    width: 30%; }
+    .page__container--wider {
+      width: 67%; }
+
+.aside__container {
+  background: #fff;
+  padding: 30px;
+  margin-bottom: 30px; }
+
+.aside__heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  padding: 30px 0 20px 0; }
+
+.blog {
+  background: #fff; }
+
 .copyright {
   background: #2c2c2c;
   padding: 5px; }
