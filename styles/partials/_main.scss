@@ -5,5 +5,11 @@
     &__text {
         width: 90%;
         margin: 30px 0;
+        &--narrow {
+            width: 100%;
+        }
+    }
+    &--narrow {
+        flex: 4 0 300px;
     }
 }

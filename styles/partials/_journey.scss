@@ -1,0 +1,24 @@
+.journey {
+    &__container {
+        background: $background;
+    }
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        padding: 100px 0;
+    }
+    &__image-container {
+        flex: 1 0 300px;
+    }
+    &__image {
+        box-shadow: 20px 20px 0 $color,
+    }
+    &__gallery {
+        display: flex;
+        justify-content: space-between;
+        padding: 100px 0;
+    }
+    &__gallery-items {
+        width: 31%;
+    }
+}
