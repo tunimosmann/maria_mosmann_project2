@@ -1,3 +1,4 @@
+@charset "UTF-8";
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
 
@@ -507,6 +508,9 @@ img {
   padding: 30px;
   margin-bottom: 30px; }
 
+.aside__image-container {
+  padding-bottom: 30px; }
+
 .aside__heading {
   font-size: 2.4rem;
   font-weight: 700;
@@ -514,10 +518,85 @@ img {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  padding: 30px 0 20px 0; }
+  padding: 0 0 15px 0; }
 
-.blog {
-  background: #fff; }
+.aside__items {
+  margin-bottom: 15px; }
+
+.aside__link {
+  display: inline;
+  padding: 0; }
+  .aside__link--blue {
+    color: #285e64;
+    font-weight: 700; }
+  .aside__link--before::before {
+    content: "•";
+    color: #f6a823;
+    padding: 0 10px; }
+  .aside__link:hover {
+    color: #a82706; }
+
+.blog__post, .blog__comments {
+  background: #fff;
+  padding: 30px;
+  margin-bottom: 30px; }
+
+.blog__post {
+  border-bottom: 5px solid #f6a823; }
+
+.blog__heading {
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0; }
+
+.blog__date {
+  margin-top: 15px;
+  font-style: italic; }
+  .blog__date--color {
+    color: #285e64;
+    margin: 0;
+    font-weight: 700; }
+
+.blog__link {
+  display: inline;
+  padding: 0;
+  color: #285e64;
+  font-weight: 700; }
+  .blog__link:hover {
+    color: #a82706; }
+
+.blog__text {
+  margin-top: 15px; }
+
+.blog__comments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+  .blog__comments--border {
+    border-bottom: 5px solid #f6a823; }
+
+.blog__image-container {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 50px;
+  flex: 1 0 50px; }
+
+.blog__content {
+  -webkit-box-flex: 7;
+  -ms-flex: 7 0 250px;
+  flex: 7 0 250px; }
+
+.form {
+  background: #fff;
+  padding: 30px; }
 
 .copyright {
   background: #2c2c2c;

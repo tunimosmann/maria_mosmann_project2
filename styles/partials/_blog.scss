@@ -1,3 +1,49 @@
 .blog {
-    background: #fff;
+    &__post,
+    &__comments {
+        background: #fff;
+        padding: 30px;
+        margin-bottom: 30px;
+    }
+    &__post {
+        border-bottom: 5px solid $color;
+    }
+    &__heading {
+        @include heading (32);        
+    }
+    &__date {
+        margin-top: 15px;
+        font-style: italic;
+        &--color {
+            color: $textSecondary;
+            margin: 0;
+            font-weight: 700;
+        }
+    }
+    &__link {
+        display: inline;
+        padding: 0; 
+        color: $textSecondary;        
+        font-weight: 700;
+        &:hover {
+            color: $colorSecondary;
+        } 
+    }
+    &__text {
+        margin-top: 15px;
+    }
+    &__comments {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        &--border {
+            border-bottom: 5px solid $color;
+        }
+    }
+    &__image-container {
+        flex: 1 0 50px;
+    }
+    &__content {
+        flex: 7 0 250px;
+    }
 }

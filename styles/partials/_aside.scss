@@ -4,8 +4,30 @@
     padding: 30px;
     margin-bottom: 30px;
     }
+    &__image-container {
+        padding-bottom: 30px;
+    }
     &__heading {
         @include heading(24);
-        padding: 30px 0 20px 0; 
+        padding: 0 0 15px 0; 
     }
+    &__items {
+        margin-bottom: 15px;
+    }
+    &__link {
+        display: inline;
+        padding: 0;        
+        &--blue {
+            color: $textSecondary;        
+            font-weight: 700;            
+        }
+        &--before::before {
+            content: "•";
+            color: $color; 
+            padding: 0 10px;
+        } 
+        &:hover {
+            color: $colorSecondary;
+        }       
+    }    
 }
