@@ -1,4 +1,33 @@
 .form {
-    background: #fff;
-    padding: 30px;
+    // background: #fff;
+    // padding: 30px;
+    display: flex;		
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &__name,
+    &__email,
+    &__text {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 40px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 1.8rem;
+    margin: 0 5px 20px 10px;
+    flex: 1 1 350px;
+    padding: 35px;    
     }
+    &__name {        
+        margin-left: 0;
+    }
+    &__email {
+        margin-right: 0;
+    }
+    &__text {
+        flex: 1 1 700px;
+        margin: 0 0 20px 0;
+        height: 300px;
+    }
+}

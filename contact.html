@@ -106,9 +106,9 @@
         <!-- ASIDE ENDS -->
 
         <!-- CONTACT FORM START -->
-        <div class="page__container page__container--wider form">        
+        <div class="page__container page__container--wider">        
             <form action="http://www.focuspocus.io/magic/rossimosmann@gmail.com" method="POST" name="contact-form" autocomplete="off"
-            autocorrect="off" autocapitalize="off" class="form__container">
+            autocorrect="off" autocapitalize="off" class="form">
 
                 <label for="name" class="visuallyhidden">Name</label>
                 <input type="text" class="form__name" id="name" name="Name" placeholder="Name" required>
@@ -116,10 +116,11 @@
                 <label for="email" class="visuallyhidden">Email address</label>
                 <input type="email" class="form__email" id="email" name="Email" placeholder="Email address" required>
             
-                <label for="message" class="visuallyhidden">Message</label>
-                <input type="text" class="form__text" id="message" name="Message" placeholder="Message" required>
-            
-                <button class="button--wide">Submit <span class="sr-only">your message</span></button>
+                <label for="comment" class="visuallyhidden">Comment</label>
+                <textarea class="form__text" id="comment" name="Comment" placeholder="Comment" required cols="30" rows="10"></textarea>
+
+                <label for="submit" class="visuallyhidden">Submit</label>
+                <button class="button button--wide" id="submit">Submit<span class="sr-only">your message</span></button>
 
             </form>
             <!-- CONTACT FORM END -->

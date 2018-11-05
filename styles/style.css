@@ -293,7 +293,7 @@ img {
       padding: 0;
       position: absolute;
       left: 10%;
-      bottom: -15%; }
+      bottom: -12%; }
   .header__text-image {
     position: absolute;
     top: -20%;
@@ -321,6 +321,14 @@ img {
   .button:hover {
     background: #a82706;
     color: #fff; }
+  .button--wide {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 700px;
+    flex: 1 1 700px; }
 
 .about__main {
   background: #f0efed;
@@ -595,8 +603,38 @@ img {
   flex: 7 0 250px; }
 
 .form {
-  background: #fff;
-  padding: 30px; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .form__name, .form__email, .form__text {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 40px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 1.8rem;
+    margin: 0 5px 20px 10px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 350px;
+    flex: 1 1 350px;
+    padding: 35px; }
+  .form__name {
+    margin-left: 0; }
+  .form__email {
+    margin-right: 0; }
+  .form__text {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 700px;
+    flex: 1 1 700px;
+    margin: 0 0 20px 0;
+    height: 300px; }
 
 .copyright {
   background: #2c2c2c;

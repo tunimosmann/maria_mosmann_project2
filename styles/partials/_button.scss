@@ -14,5 +14,12 @@
     &:hover {
         background: $colorSecondary;        
         color: #fff;
+    }
+    &--wide {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none; 
+    flex: 1 1 700px;  
     }   
 }
