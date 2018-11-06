@@ -275,7 +275,15 @@ img {
     .header__wrapper--background {
       background: url(../assets/contact-image-1.jpg); }
   .header__title {
-    position: relative; }
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 300px;
+    flex: 1 1 300px; }
+  .header__text-image {
+    width: 200px;
+    position: absolute;
+    top: -20%;
+    left: -10%; }
   .header__heading {
     font-size: 15rem;
     font-weight: 700;
@@ -294,10 +302,10 @@ img {
       position: absolute;
       left: 10%;
       bottom: -12%; }
-  .header__text-image {
-    position: absolute;
-    top: -20%;
-    left: -10%; }
+  .header__image-container {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 2 100px;
+    flex: 1 2 100px; }
   .header__image {
     -webkit-box-shadow: 20px 20px 0 0 #fff;
     box-shadow: 20px 20px 0 0 #fff;
@@ -349,9 +357,10 @@ img {
     width: 100%; }
 
 .main--narrow {
-  -webkit-box-flex: 4;
-  -ms-flex: 4 0 300px;
-  flex: 4 0 300px; }
+  -webkit-box-flex: 6;
+  -ms-flex: 6 1 300px;
+  flex: 6 1 300px;
+  margin-left: 120px; }
 
 .sub {
   display: -webkit-box;
@@ -366,7 +375,7 @@ img {
   -ms-flex-align: end;
   align-items: flex-end;
   position: relative;
-  bottom: 30px; }
+  top: -30px; }
   .sub--flex-reverse {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
@@ -375,8 +384,7 @@ img {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    top: 30px;
-    bottom: 0; }
+    top: 30px; }
   .sub__image-container {
     -webkit-box-flex: 1;
     -ms-flex: 1 0 300px;
@@ -387,7 +395,7 @@ img {
     -webkit-box-shadow: 20px 20px 0 #a82706, -300px 20px 0 #a82706;
     box-shadow: 20px 20px 0 #a82706, -300px 20px 0 #a82706; }
     .sub__image--flex-reverse {
-      top: 0;
+      bottom: 0;
       -webkit-box-shadow: 20px 20px 0 #f6a823, 300px 20px 0 #f6a823;
       box-shadow: 20px 20px 0 #f6a823, 300px 20px 0 #f6a823; }
   .sub__info {
@@ -453,6 +461,8 @@ img {
     -o-transition: background 500ms, transform 500ms, box-shadow 500ms;
     transition: background 500ms, transform 500ms, box-shadow 500ms;
     transition: background 500ms, transform 500ms, box-shadow 500ms, -webkit-transform 500ms, -webkit-box-shadow 500ms; }
+    .links__items--margin {
+      margin-bottom: 0; }
     .links__items:hover {
       background: #f6a823;
       -webkit-transform: scale(0.9);
@@ -487,14 +497,18 @@ img {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 100px 0; }
 
 .journey__image-container {
   -webkit-box-flex: 1;
-  -ms-flex: 1 0 300px;
-  flex: 1 0 300px; }
+  -ms-flex: 1 1 200px;
+  flex: 1 1 200px; }
 
 .journey__image {
+  width: 100%;
   -webkit-box-shadow: 20px 20px 0 #f6a823;
   box-shadow: 20px 20px 0 #f6a823; }
 
@@ -705,3 +719,66 @@ img {
   .copyright__text {
     color: #f0efed;
     text-align: center; }
+
+/* Landscape tablet and laptops*/
+@media (max-width: 1280px) {
+  .header {
+    height: 75vh; }
+    .header__heading {
+      font-size: 12rem; }
+    .header__text-image {
+      width: 150px;
+      top: -15%;
+      left: -7%; }
+  .about__main {
+    padding-bottom: 100px; }
+  .main--narrow {
+    -webkit-box-flex: 4;
+    -ms-flex-positive: 4;
+    flex-grow: 4; }
+  .sub__info {
+    padding: 75px 0 0 75px; }
+    .sub__info--flex-reverse {
+      padding: 0 75px 75px 0; }
+  .sub__heading {
+    font-size: 2.8rem; }
+  .sub__text {
+    margin: 20px 0; }
+  .links__container {
+    padding: 100px 0; } }
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  html {
+    font-size: 55%; }
+  .header {
+    height: 55vh; }
+    .header__text-image {
+      width: 120px;
+      top: -10%;
+      left: -7%; }
+  .sub {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: static; }
+    .sub--flex-reverse {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    .sub__image {
+      position: static; }
+    .sub__info {
+      padding: 50px 0 50px 50px; }
+      .sub__info--flex-reverse {
+        padding: 50px 50px 50px 0; }
+  .links__container {
+    padding: 75px 0; }
+  .links__items:hover {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8); } }
+
+/* Landscape phone to portrait tablet */
+/* Landscape phones */
+/* portrait phones to landscape phones  */

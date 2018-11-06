@@ -12,34 +12,39 @@
         height: 100%;        
         margin-top: 70px; 
         &--small {
-        width: 100%;        
-        background: url(../assets/blog-image-1.jpg);        
-        background-size: cover;
-        background-repeat: no-repeat;               
-        position: relative;       
+            width: 100%;        
+            background: url(../assets/blog-image-1.jpg);    
+            background-size: cover;
+            background-repeat: no-repeat;               
+            position: relative;       
         } 
         &--background {
             background: url(../assets/contact-image-1.jpg); 
         }                                   
     }
     &__title {
-        position: relative;        
+        position: relative;    
+        flex: 1 1 300px;     
+    }
+    &__text-image {
+        width: 200px;
+        position: absolute;
+        top: -20%;
+        left: -10%;
     }
     &__heading {
         @include heading(150);
         font-family: 'Lora', serif;
         &--small {
-        @include heading(80);
-        position: absolute;
-        left: 10%;
-        bottom: -12%;        
+            @include heading(80);
+            position: absolute;
+            left: 10%;
+            bottom: -12%;        
         }        
     }
-    &__text-image {
-        position: absolute;
-        top: -20%;
-        left: -10%;
-    }
+    &__image-container {
+        flex: 1 2 100px;
+    }  
     &__image {
         box-shadow: 20px 20px 0 0 #fff;
         position: relative;

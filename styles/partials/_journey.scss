@@ -5,12 +5,14 @@
     &__main {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding: 100px 0;
     }
     &__image-container {
-        flex: 1 0 300px;
+        flex: 1 1 200px;
     }
     &__image {
+        width: 100%;
         box-shadow: 20px 20px 0 $color,
     }
     &__gallery {

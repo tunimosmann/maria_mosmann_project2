@@ -1,0 +1,99 @@
+/* Landscape tablet and laptops*/
+@media (max-width: 1280px) {
+    .header {
+        height: 75vh;
+        &__heading {
+            font-size: 12rem;
+        }
+        &__text-image {            
+            width: 150px;
+            top: -15%;
+            left: -7%;
+        }
+    }
+    .about {
+        &__main {
+            padding-bottom: 100px;
+        }    
+    }
+    .main {
+        &--narrow {
+            flex-grow: 4;
+        }
+    }
+    .sub {
+        &__info {            
+            padding: 75px 0 0 75px;            
+            &--flex-reverse {
+                padding: 0 75px 75px 0;
+            }
+        }
+        &__heading {
+            font-size: 2.8rem;            
+        }
+        &__text {
+            margin: 20px 0;                    
+        }
+    }
+    .links {   
+        &__container {            
+            padding: 100px 0; 
+        }             
+    }        
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+    html {
+        font-size: 55%;       
+    }
+    .header {
+        height: 55vh;
+        &__text-image {            
+            width: 120px;
+            top: -10%;
+            left: -7%;
+        }
+    }
+    .sub {        
+        align-items: center;
+        position: static;
+        &--flex-reverse {        
+            align-items: center;        
+        } 
+        &__image {
+           position: static; 
+        }
+        &__info {            
+            padding: 50px 0 50px 50px;            
+            &--flex-reverse {
+                padding: 50px 50px 50px 0;
+            } 
+        }       
+    }
+    .links {   
+        &__container {            
+            padding: 75px 0; 
+        }
+        &__items {
+            &:hover {
+                transform: scale(0.8);
+            } 
+        }             
+    }  
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+}
+
+/* Landscape phones */
+@media (max-width: 480px) {
+
+}
+
+/* portrait phones to landscape phones  */
+@media (max-width: 300px) {
+
+}

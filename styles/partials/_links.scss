@@ -13,11 +13,14 @@
         margin-bottom: 30px; 
         padding: 10px; 
         transition: background 500ms, transform 500ms, box-shadow 500ms;
+        &--margin {
+            margin-bottom: 0; 
+        }
         &:hover {
             background: $color;
             transform: scale(0.9);
             box-shadow: -10px -10px 0 $colorSecondary, 10px 10px 0 $colorAccent, 20px 20px 10px #b1b1b1;
-        }
+        }        
     }
     &__icon-container {
         margin-right: 15px;
