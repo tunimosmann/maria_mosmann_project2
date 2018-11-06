@@ -25,6 +25,7 @@
         padding: 0; 
         color: $textSecondary;        
         font-weight: 700;
+        transition: color 300ms;
         &:hover {
             color: $colorSecondary;
         } 

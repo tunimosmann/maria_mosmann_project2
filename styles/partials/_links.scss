@@ -3,13 +3,21 @@
     &__container {
         display: flex;
         flex-wrap: wrap;
-        padding: 150px 0 100px 0;        
+        padding: 150px 0 100px 0;              
     }    
     &__items {
         flex: 1 0 450px;
         display: flex;
         justify-content: center;
         align-items: flex-start;
+        margin-bottom: 30px; 
+        padding: 10px; 
+        transition: background 500ms, transform 500ms, box-shadow 500ms;
+        &:hover {
+            background: $color;
+            transform: scale(0.9);
+            box-shadow: -10px -10px 0 $colorSecondary, 10px 10px 0 $colorAccent, 20px 20px 10px #b1b1b1;
+        }
     }
     &__icon-container {
         margin-right: 15px;
