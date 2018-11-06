@@ -94,6 +94,11 @@
                 transform: scale(0.8);
             } 
         }             
+    }
+    .journey {
+        &__main {
+            align-items: flex-start;
+        }
     }  
 }
 
@@ -108,6 +113,13 @@
         }
         &__main-menu {        
             padding: 10px;
+        }
+        &__links {
+            font-size: 2.6rem;
+            &:hover {
+                transform: none;
+                text-shadow: none;
+            } 
         }
     }
     .header {
@@ -161,10 +173,11 @@
         &__container {
             width: 100%;
             padding: 30px;
-            justify-content: space-around;
+            display: block;
         }
         &__items {
-            margin: 0;
+            margin: 0 auto;
+            width: 100%;  
             &:hover {
                 background: none;
                 transform: none;
@@ -174,6 +187,7 @@
     }
     .journey {
         &__main {
+            width: 100%;
             display: block;
             padding: 30px;
         }
@@ -181,9 +195,12 @@
             display: none;
         }
         &__gallery {
-            padding: 50px 0;             
+            width: 100%;
+            padding: 0; 
+            justify-content: flex-start;            
         }
         &__gallery-items {
+            flex-grow: 1;
             &:hover {
                 transform: none;
                 box-shadow: none;
@@ -194,10 +211,51 @@
 
 /* Landscape phones */
 @media (max-width: 480px) {
-
+    html {
+        font-size: 45%;       
+    }    
+    .header {
+        height: 50vh; 
+        &__title {
+            margin: auto;
+        }
+        &__heading {
+            margin: 0;
+            font-size: 10rem;
+        }
+        &__text-image {            
+            width: 100px;
+            top: -15%;
+            left: -7%;
+        }
+        &__image-container {
+            display: none;                
+        } 
+    }
 }
 
 /* portrait phones to landscape phones  */
-@media (max-width: 300px) {
-
+@media (max-width: 320px) {
+    .nav {
+        &__main-menu {        
+            padding: 5px;
+        }
+        &__links {
+            font-size: 2rem;
+            padding: 3px;
+        }
+    }
+    .header {
+        &__wrapper {  
+            margin-top: 30px;
+        } 
+        &__text-image {            
+            width: 75px;
+            top: -15%;
+            left: -7%;
+        }
+        &__heading {
+            font-size: 8rem;
+        }
+    }
 }
