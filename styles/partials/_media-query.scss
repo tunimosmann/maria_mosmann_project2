@@ -3,13 +3,17 @@
     .header {
         height: 75vh;
         &__heading {
-            font-size: 12rem;
+            font-size: 10rem;
         }
         &__text-image {            
-            width: 150px;
+            width: 120px;
             top: -15%;
             left: -7%;
         }
+        &__image-container {
+            max-width: 400px;
+            width: 400px;                 
+        } 
     }
     .about {
         &__main {
@@ -48,12 +52,22 @@
         font-size: 55%;       
     }
     .header {
-        height: 55vh;
+        &__wrapper {  
+            margin-top: 50px;
+        } 
         &__text-image {            
-            width: 120px;
-            top: -10%;
+            width: 100px;
+            top: -15%;
             left: -7%;
         }
+        &__heading {
+            font-size: 8rem;
+        }
+        &__image-container {
+            max-width: 330px;
+            width: 330px;
+            position: static;                 
+        } 
     }
     .sub {        
         align-items: center;
@@ -85,7 +99,97 @@
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-
+    html {
+        font-size: 50%;       
+    }
+    .nav {
+        &__title {
+            display: none;
+        }
+        &__main-menu {        
+            padding: 10px;
+        }
+    }
+    .header {
+        &__wrapper {  
+            margin-top: 0;
+        } 
+        &__text-image {            
+            width: 80px;
+            top: -15%;
+            left: -7%;
+        }
+    }
+    .about {
+        &__main {
+            padding: 50px 0;
+        }    
+    }
+    .main {
+        text-align: center;
+        &--narrow {
+            margin: 0;
+        }        
+        &__text {
+            margin: 20px auto;
+            &--narrow {
+                width: 90%;
+            }
+        }
+    }
+    .sub {        
+        display: block;
+        padding-top: 50px;
+        &--flex-reverse {
+            padding-bottom: 50px;
+        }       
+        &__info {
+            display: block;            
+            padding: 50px 0 0 0;                       
+        }
+        &__heading {
+            text-align: center;
+        }
+        &__text {
+            text-align: center;
+        }       
+    }
+    .button {
+        margin: 0 auto;
+    }
+    .links {
+        &__container {
+            width: 100%;
+            padding: 30px;
+            justify-content: space-around;
+        }
+        &__items {
+            margin: 0;
+            &:hover {
+                background: none;
+                transform: none;
+                box-shadow: none;
+            }
+        }
+    }
+    .journey {
+        &__main {
+            display: block;
+            padding: 30px;
+        }
+        &__image-container {
+            display: none;
+        }
+        &__gallery {
+            padding: 50px 0;             
+        }
+        &__gallery-items {
+            &:hover {
+                transform: none;
+                box-shadow: none;
+            }
+        }
+    }
 }
 
 /* Landscape phones */

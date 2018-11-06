@@ -1,13 +1,13 @@
 .header {
     background: $color;    
-    height: 90vh;    
+    height: 85vh;    
     &--small {
         height: 50vh;
         background: none;    
     }                  
     &__wrapper {         
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;        
         height: 100%;        
         margin-top: 70px; 
@@ -23,8 +23,7 @@
         }                                   
     }
     &__title {
-        position: relative;    
-        flex: 1 1 300px;     
+        position: relative;     
     }
     &__text-image {
         width: 200px;
@@ -35,6 +34,7 @@
     &__heading {
         @include heading(150);
         font-family: 'Lora', serif;
+        margin-right: 50px;
         &--small {
             @include heading(80);
             position: absolute;
@@ -43,11 +43,10 @@
         }        
     }
     &__image-container {
-        flex: 1 2 100px;
-    }  
-    &__image {
+        max-width: 450px;
+        width: 450px;
         box-shadow: 20px 20px 0 0 #fff;
         position: relative;
-        top: 50px;
-    }
+        bottom: -50px;        
+    }  
 }

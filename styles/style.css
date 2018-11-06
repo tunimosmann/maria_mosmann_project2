@@ -250,7 +250,7 @@ img {
 
 .header {
   background: #f6a823;
-  height: 90vh; }
+  height: 85vh; }
   .header--small {
     height: 50vh;
     background: none; }
@@ -258,9 +258,8 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -275,10 +274,7 @@ img {
     .header__wrapper--background {
       background: url(../assets/contact-image-1.jpg); }
   .header__title {
-    position: relative;
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 300px;
-    flex: 1 1 300px; }
+    position: relative; }
   .header__text-image {
     width: 200px;
     position: absolute;
@@ -291,7 +287,8 @@ img {
     text-transform: uppercase;
     margin: 0;
     padding: 0;
-    font-family: 'Lora', serif; }
+    font-family: 'Lora', serif;
+    margin-right: 50px; }
     .header__heading--small {
       font-size: 8rem;
       font-weight: 700;
@@ -303,14 +300,12 @@ img {
       left: 10%;
       bottom: -12%; }
   .header__image-container {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 2 100px;
-    flex: 1 2 100px; }
-  .header__image {
+    max-width: 450px;
+    width: 450px;
     -webkit-box-shadow: 20px 20px 0 0 #fff;
     box-shadow: 20px 20px 0 0 #fff;
     position: relative;
-    top: 50px; }
+    bottom: -50px; }
 
 .button {
   background: #05afc1;
@@ -725,11 +720,14 @@ img {
   .header {
     height: 75vh; }
     .header__heading {
-      font-size: 12rem; }
+      font-size: 10rem; }
     .header__text-image {
-      width: 150px;
+      width: 120px;
       top: -15%;
       left: -7%; }
+    .header__image-container {
+      max-width: 400px;
+      width: 400px; }
   .about__main {
     padding-bottom: 100px; }
   .main--narrow {
@@ -751,12 +749,18 @@ img {
 @media (max-width: 940px) {
   html {
     font-size: 55%; }
-  .header {
-    height: 55vh; }
-    .header__text-image {
-      width: 120px;
-      top: -10%;
-      left: -7%; }
+  .header__wrapper {
+    margin-top: 50px; }
+  .header__text-image {
+    width: 100px;
+    top: -15%;
+    left: -7%; }
+  .header__heading {
+    font-size: 8rem; }
+  .header__image-container {
+    max-width: 330px;
+    width: 330px;
+    position: static; }
   .sub {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -780,5 +784,70 @@ img {
     transform: scale(0.8); } }
 
 /* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 50%; }
+  .nav__title {
+    display: none; }
+  .nav__main-menu {
+    padding: 10px; }
+  .header__wrapper {
+    margin-top: 0; }
+  .header__text-image {
+    width: 80px;
+    top: -15%;
+    left: -7%; }
+  .about__main {
+    padding: 50px 0; }
+  .main {
+    text-align: center; }
+    .main--narrow {
+      margin: 0; }
+    .main__text {
+      margin: 20px auto; }
+      .main__text--narrow {
+        width: 90%; }
+  .sub {
+    display: block;
+    padding-top: 50px; }
+    .sub--flex-reverse {
+      padding-bottom: 50px; }
+    .sub__info {
+      display: block;
+      padding: 50px 0 0 0; }
+    .sub__heading {
+      text-align: center; }
+    .sub__text {
+      text-align: center; }
+  .button {
+    margin: 0 auto; }
+  .links__container {
+    width: 100%;
+    padding: 30px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  .links__items {
+    margin: 0; }
+    .links__items:hover {
+      background: none;
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+  .journey__main {
+    display: block;
+    padding: 30px; }
+  .journey__image-container {
+    display: none; }
+  .journey__gallery {
+    padding: 50px 0; }
+  .journey__gallery-items:hover {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    -webkit-box-shadow: none;
+    box-shadow: none; } }
+
 /* Landscape phones */
 /* portrait phones to landscape phones  */
