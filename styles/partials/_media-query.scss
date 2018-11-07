@@ -2,8 +2,16 @@
 @media (max-width: 1280px) {
     .header {
         height: 75vh;
+        &--small {
+            height: 45vh;
+        }
         &__heading {
             font-size: 10rem;
+            &--small {
+                font-size: 8rem;
+                left: 10%;
+                bottom: -15%;    
+            } 
         }
         &__text-image {            
             width: 120px;
@@ -43,7 +51,15 @@
         &__container {            
             padding: 100px 0; 
         }             
-    }        
+    }
+    .aside {
+        &__link {
+            &--yellow {
+            padding: 0 5px;
+            margin-right: 10px;
+            }
+        }
+    }          
 }
 
 /* Portrait tablet and small desktops */
@@ -99,7 +115,19 @@
         &__main {
             align-items: flex-start;
         }
-    }  
+    }
+    .page {
+        &__wrapper {
+            width: 100%;
+            padding: 70px 30px;
+        } 
+    }
+    .form {
+        &__name,
+        &__email{
+            width: 100%;
+        }
+    } 
 }
 
 /* Landscape phone to portrait tablet */
@@ -123,6 +151,11 @@
         }
     }
     .header {
+        &--small {
+            height: 40vh;
+            background-size: contain;            
+            margin-top: 40px;              
+        }
         &__wrapper {  
             margin-top: 0;
         } 
@@ -130,6 +163,13 @@
             width: 80px;
             top: -15%;
             left: -7%;
+        }
+        &__heading {
+            &--small {
+                font-size: 7rem;
+                position: static;
+                text-align: center;
+            }
         }
     }
     .about {
@@ -206,22 +246,60 @@
                 box-shadow: none;
             }
         }
+    }    
+    .aside {
+        display: none;
     }
+    .blog {
+        width: 100%;
+        &__comments {
+            display: block;
+        }
+        &__image-container {
+            display: none;
+        }
+    }
+    .page {
+        &__container {
+            width: 100%;
+        }
+        &__wrapper {
+            width: 100%;
+            padding: 30px;
+        } 
+    } 
 }
 
 /* Landscape phones */
 @media (max-width: 480px) {
     html {
         font-size: 45%;       
+    }
+    .nav {
+        &__main-menu {        
+            padding: 10px;
+        }
+        &__links {
+            font-size: 2.2rem; 
+            padding: 5px;
+        }
     }    
     .header {
-        height: 50vh; 
+        height: 50vh;
+        &--small {
+            height: 35vh;
+            background-size: 70%; 
+            background-position: center;                    
+        } 
         &__title {
             margin: auto;
         }
         &__heading {
             margin: 0;
             font-size: 10rem;
+            &--small {
+                font-size: 7rem;
+            }
         }
         &__text-image {            
             width: 100px;

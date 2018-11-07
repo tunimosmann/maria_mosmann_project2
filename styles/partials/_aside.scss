@@ -16,8 +16,7 @@
     }
     &__link {
         display: inline;
-        padding: 0;
-        // transition: color 300ms; 
+        padding: 0; 
         transition: transform 300ms, text-shadow 300ms, color 300ms;       
         &--blue {
             color: $textSecondary;        
