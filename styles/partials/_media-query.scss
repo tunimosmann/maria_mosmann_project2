@@ -204,7 +204,13 @@
         }
         &__text {
             text-align: center;
-        }       
+        }        
+        &__image-container {
+            box-shadow: 20px 20px 0 $colorSecondary;
+            &--flex-reverse {
+                box-shadow: 20px 20px 0 $color;
+            }
+        }            
     }
     .button {
         margin: 0 auto;
@@ -246,9 +252,41 @@
                 box-shadow: none;
             }
         }
-    }    
+    }
+    .page {
+        &__wrapper {
+            display: block;
+            width: 100%;
+        }
+    }     
     .aside {
-        display: none;
+        &__container {
+            &--display {
+                display: none;                
+            }
+        }        
+        &__container {
+           text-align: center; 
+        } 
+        &__posts {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        &__items {
+            width: 49%;
+            &:nth-child(n+3) {
+                margin-bottom: 0;
+            } 
+        }
+        &__social-media {
+            justify-content: center;
+            padding: 10px;
+        } 
+        &__email {
+            margin: 0;
+            line-height: 32px;
+        }    
     }
     .blog {
         width: 100%;
@@ -309,7 +347,22 @@
         &__image-container {
             display: none;                
         } 
-    }
+    } 
+    .aside {        
+        &__posts {
+            display: block;
+        }
+        &__items {
+            width: 100%;
+            margin-bottom: 10px;
+            &:nth-child(3) {
+                margin-bottom: 10px;
+            } 
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }       
+    }   
 }
 
 /* portrait phones to landscape phones  */

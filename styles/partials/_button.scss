@@ -1,25 +1,17 @@
 .button {
-    background: $colorAccent;
-    text-transform: uppercase;
-    font-weight: 700;
-    text-align: center;
-    line-height: 32px;
-    letter-spacing: 1px;
-    width: 220px;
-    padding: 10px;
-    transition: color 500ms ease-in, background 500ms ease-in;
+    @include button(220px);
     &--narrow {
-        width: 170px;
+        @include button(170px);
     }
     &:hover {
         background: $colorSecondary;        
         color: #fff;
     }
     &--wide {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    border: none; 
-    flex: 1 1 700px;  
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border: none; 
+        flex: 1 1 700px;  
     }   
 }

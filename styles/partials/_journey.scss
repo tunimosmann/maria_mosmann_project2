@@ -26,6 +26,7 @@
         &:hover {
             transform: scale(1.35);
             box-shadow: 0 0 15px $text;
+            z-index: 10;
         }
     }
 }

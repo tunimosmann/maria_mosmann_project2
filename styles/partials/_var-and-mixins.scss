@@ -27,6 +27,8 @@ $fontFamilySecondary: 'Lora', serif;
     line-height: 32px;
     width: $width;
     background: $colorAccent;
+    padding: 10px;
+    transition: color 500ms ease-in, background 500ms ease-in;
 }
 
 

@@ -12,16 +12,14 @@
     }  
     &__image-container {
         flex: 1 0 300px;
-    }
-    &__image {
         position: relative;
         bottom: 20px;
         box-shadow: 20px 20px 0 $colorSecondary, -300px 20px 0 $colorSecondary;
         &--flex-reverse {
             bottom: 0;
             box-shadow: 20px 20px 0 $color, 300px 20px 0 $color;
-        }       
-    }
+        } 
+    }    
     &__info {
         flex: 1 0 300px;
         padding: 100px 0 0 100px;
